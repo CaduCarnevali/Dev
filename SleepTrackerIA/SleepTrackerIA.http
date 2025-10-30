@@ -1,0 +1,6 @@
+@SleepTrackerIA_HostAddress = http://localhost:5184
+
+GET {{SleepTrackerIA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
