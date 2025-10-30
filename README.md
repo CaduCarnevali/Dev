@@ -50,3 +50,17 @@ Com base nesses dados, o sistema identifica **qual período do dia** o usuário 
 
 ## 🧱 Estrutura de Pastas (sugestão)
 
+```plaintext
+📦 ProjetoProdutividade
+ ┣ 📂 Controllers         # Controladores MVC (intermedia a comunicação entre View e Model)
+ ┣ 📂 Models              # Classes de domínio e regras de negócio
+ ┣ 📂 Views               # Páginas HTML/CSHTML que compõem a interface do usuário
+ ┣ 📂 wwwroot             # Arquivos estáticos do front-end
+ ┃ ┣ 📂 css               # Estilos (Bootstrap, custom.css, etc.)
+ ┃ ┣ 📂 js                # Scripts JavaScript do projeto
+ ┃ ┗ 📂 img               # Imagens, ícones e ilustrações
+ ┣ 📜 appsettings.json    # Configurações gerais e de conexão com o banco
+ ┣ 📜 Program.cs          # Ponto de entrada da aplicação
+ ┣ 📜 ProjetoProdutividade.csproj  # Arquivo de configuração do projeto C#
+ ┗ 📜 README.md           # Documentação principal do projeto
+
