@@ -1,1 +1,1722 @@
-{"Version":1,"Hash":"2nuTTjs6sxf9AMOXAPFY158iKQYLDtaZgxr+xB8xMBA=","Source":"SleepTrackerIA","BasePath":"_content/SleepTrackerIA","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"SleepTrackerIA\\wwwroot","Source":"SleepTrackerIA","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\","BasePath":"_content/SleepTrackerIA","Pattern":"**"}],"Assets":[{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-g8js3i7qex.gz","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/SleepTrackerIA","RelativePath":"index#[.{fingerprint=g8js3i7qex}]?.html.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\index.html","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"oa8ijcr9vq","Integrity":"gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\index.html","FileLength":2238,"LastWriteTime":"2025-10-31T00:48:57+00:00"},{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-4b5l2tjt5u.gz","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/SleepTrackerIA","RelativePath":"css/style#[.{fingerprint=4b5l2tjt5u}]?.css.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\css\\style.css","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"lwogt1asy5","Integrity":"65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\css\\style.css","FileLength":2932,"LastWriteTime":"2025-10-31T00:48:57+00:00"},{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-062ozav3fl.gz","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/SleepTrackerIA","RelativePath":"js/app#[.{fingerprint=062ozav3fl}]?.js.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\js\\app.js","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"whihhwoc0t","Integrity":"5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\js\\app.js","FileLength":3838,"LastWriteTime":"2025-10-31T01:29:07+00:00"},{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\css\\style.css","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\","BasePath":"_content/SleepTrackerIA","RelativePath":"css/style#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"4b5l2tjt5u","Integrity":"4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\css\\style.css","FileLength":11636,"LastWriteTime":"2025-10-30T13:49:05+00:00"},{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\index.html","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\","BasePath":"_content/SleepTrackerIA","RelativePath":"index#[.{fingerprint}]?.html","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"g8js3i7qex","Integrity":"oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\index.html","FileLength":9944,"LastWriteTime":"2025-10-31T00:24:11+00:00"},{"Identity":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\js\\app.js","SourceId":"SleepTrackerIA","SourceType":"Discovered","ContentRoot":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\","BasePath":"_content/SleepTrackerIA","RelativePath":"js/app#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"062ozav3fl","Integrity":"CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\js\\app.js","FileLength":15720,"LastWriteTime":"2025-10-31T01:28:30+00:00"}],"Endpoints":[{"Route":"css/style.4b5l2tjt5u.css","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-4b5l2tjt5u.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000340947835"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2932"},{"Name":"ETag","Value":"\"65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"W/\"4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"4b5l2tjt5u"},{"Name":"label","Value":"css/style.css"},{"Name":"integrity","Value":"sha256-4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo="}]},{"Route":"css/style.4b5l2tjt5u.css","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\css\\style.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"11636"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo=\""},{"Name":"Last-Modified","Value":"Thu, 30 Oct 2025 13:49:05 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"4b5l2tjt5u"},{"Name":"label","Value":"css/style.css"},{"Name":"integrity","Value":"sha256-4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo="}]},{"Route":"css/style.4b5l2tjt5u.css.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-4b5l2tjt5u.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2932"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"4b5l2tjt5u"},{"Name":"label","Value":"css/style.css.gz"},{"Name":"integrity","Value":"sha256-65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4="}]},{"Route":"css/style.css","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-4b5l2tjt5u.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000340947835"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2932"},{"Name":"ETag","Value":"\"65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"W/\"4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo="}]},{"Route":"css/style.css","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\css\\style.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"11636"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo=\""},{"Name":"Last-Modified","Value":"Thu, 30 Oct 2025 13:49:05 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-4KtQdzuQnFSgYtiXZhGFlrcRC1oN80C3Tc8iCGDgkpo="}]},{"Route":"css/style.css.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-4b5l2tjt5u.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2932"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-65yG8VkbEIO1+HflbsKE/jTzyu97jgX0GaIOSmj7s/4="}]},{"Route":"index.g8js3i7qex.html","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-g8js3i7qex.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000446627959"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2238"},{"Name":"ETag","Value":"\"gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"W/\"oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"g8js3i7qex"},{"Name":"label","Value":"index.html"},{"Name":"integrity","Value":"sha256-oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg="}]},{"Route":"index.g8js3i7qex.html","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"9944"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:24:11 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"g8js3i7qex"},{"Name":"label","Value":"index.html"},{"Name":"integrity","Value":"sha256-oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg="}]},{"Route":"index.g8js3i7qex.html.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-g8js3i7qex.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2238"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"g8js3i7qex"},{"Name":"label","Value":"index.html.gz"},{"Name":"integrity","Value":"sha256-gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM="}]},{"Route":"index.html","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-g8js3i7qex.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000446627959"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2238"},{"Name":"ETag","Value":"\"gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"W/\"oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg="}]},{"Route":"index.html","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"9944"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:24:11 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-oFRhNljMUASKTdIiSRAwhghhMU/xQP6s3aKlk9vP8Kg="}]},{"Route":"index.html.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-g8js3i7qex.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2238"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 00:48:57 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-gI0B3PBTEok0J+SA4eXi/OBB1mM+VHWCmZO8JOja/DM="}]},{"Route":"js/app.062ozav3fl.js","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-062ozav3fl.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000260484501"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3838"},{"Name":"ETag","Value":"\"5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:29:07 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"W/\"CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"062ozav3fl"},{"Name":"label","Value":"js/app.js"},{"Name":"integrity","Value":"sha256-CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds="}]},{"Route":"js/app.062ozav3fl.js","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\js\\app.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15720"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:28:30 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"062ozav3fl"},{"Name":"label","Value":"js/app.js"},{"Name":"integrity","Value":"sha256-CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds="}]},{"Route":"js/app.062ozav3fl.js.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-062ozav3fl.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3838"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:29:07 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"062ozav3fl"},{"Name":"label","Value":"js/app.js.gz"},{"Name":"integrity","Value":"sha256-5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A="}]},{"Route":"js/app.js","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-062ozav3fl.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000260484501"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3838"},{"Name":"ETag","Value":"\"5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:29:07 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"W/\"CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds="}]},{"Route":"js/app.js","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\wwwroot\\js\\app.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15720"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:28:30 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-CMQiIDlNrOfTccWqHqOGsvrc/vzxJW7/2NTUs2YZmds="}]},{"Route":"js/app.js.gz","AssetFile":"C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-062ozav3fl.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3838"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A=\""},{"Name":"Last-Modified","Value":"Fri, 31 Oct 2025 01:29:07 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-5CjtiPkX/mpnZQrdMz2V1QZnyzTf2yWmYb895Rfff3A="}]}]}
+{
+  "Version": 1,
+  "Hash": "S4gWXHi7Ba3KfFln197ryE3UGZzCIKuiMsFbQ9//MPs=",
+  "Source": "SleepTrackerIA",
+  "BasePath": "_content/SleepTrackerIA",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SleepTrackerIA\\wwwroot",
+      "Source": "SleepTrackerIA",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-x6mkngs463.gz",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "index#[.{fingerprint=x6mkngs463}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bsyfonvlyi",
+      "Integrity": "22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-jfa8h3568a.gz",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "css/style#[.{fingerprint=jfa8h3568a}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "j25wbvb2ot",
+      "Integrity": "VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\loe548uv2l-85b3zi1611.gz",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "css/styles#[.{fingerprint=85b3zi1611}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jjxjxzhesl",
+      "Integrity": "cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\wewzxii0pa-sq9xogw0ba.gz",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "register#[.{fingerprint=sq9xogw0ba}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\register.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ws72o65yzo",
+      "Integrity": "AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\register.html"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-dvixulnn44.gz",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "js/app#[.{fingerprint=dvixulnn44}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\js\\app.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "hiua4773qd",
+      "Integrity": "Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\style.css",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jfa8h3568a",
+      "Integrity": "z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\styles.css",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "css/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "85b3zi1611",
+      "Integrity": "LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\index.html",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x6mkngs463",
+      "Integrity": "p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\js\\app.js",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dvixulnn44",
+      "Integrity": "N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\register.html",
+      "SourceId": "SleepTrackerIA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\",
+      "BasePath": "_content/SleepTrackerIA",
+      "RelativePath": "register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sq9xogw0ba",
+      "Integrity": "bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\register.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-jfa8h3568a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000306936771"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3257"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-jfa8h3568a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jfa8h3568a.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-jfa8h3568a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000306936771"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3257"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfa8h3568a"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jfa8h3568a.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfa8h3568a"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1N69Kibqmo28CaDhYDaDYG4kut5btTwaR2IvSLElOw="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jfa8h3568a.css.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\btpl39f3p8-jfa8h3568a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfa8h3568a"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VSc3U9KH84mQbMsOEvBMNIVvb2J5iRRpdhnZTMwVe7Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.85b3zi1611.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\loe548uv2l-85b3zi1611.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002141327623"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85b3zi1611"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.85b3zi1611.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85b3zi1611"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.85b3zi1611.css.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\loe548uv2l-85b3zi1611.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85b3zi1611"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\loe548uv2l-85b3zi1611.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002141327623"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHYMUrS9btgO/gBu9F6Ge+uuCEJvKAhQ2EhW2GVfXQY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\loe548uv2l-85b3zi1611.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cRIYUD4CtabC/Gj6HRz2Dic0kXWOd37Lsn7fktaC+uA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-x6mkngs463.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000435919791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-x6mkngs463.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0="
+        }
+      ]
+    },
+    {
+      "Route": "index.x6mkngs463.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-x6mkngs463.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000435919791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x6mkngs463"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU="
+        }
+      ]
+    },
+    {
+      "Route": "index.x6mkngs463.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x6mkngs463"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p9so+2tOjMbroLPijRjdkw51GChMzbgZP/hO82YeCKU="
+        }
+      ]
+    },
+    {
+      "Route": "index.x6mkngs463.html.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\2gslj7vur7-x6mkngs463.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:44:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x6mkngs463"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-22FvMuUT/nhAWpSnqgtciVH17NfoKwDjEsTMRsnzHr0="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.dvixulnn44.js",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-dvixulnn44.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000294985251"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3389"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dvixulnn44"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.dvixulnn44.js",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dvixulnn44"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.dvixulnn44.js.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-dvixulnn44.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dvixulnn44"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-dvixulnn44.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000294985251"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3389"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N6BhzN4XfeCl1rNjtSWleeDudMutlYOGGo+kjWQ0mEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\yvfjdxc3ly-dvixulnn44.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 13:54:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bxe1gISzeAOfceZNbFkYwPex3JZVe7cxZULANFUsxDQ="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\wewzxii0pa-sq9xogw0ba.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000897666068"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1113"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs="
+        }
+      ]
+    },
+    {
+      "Route": "register.html.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\wewzxii0pa-sq9xogw0ba.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI="
+        }
+      ]
+    },
+    {
+      "Route": "register.sq9xogw0ba.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\wewzxii0pa-sq9xogw0ba.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000897666068"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1113"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sq9xogw0ba"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs="
+        }
+      ]
+    },
+    {
+      "Route": "register.sq9xogw0ba.html",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sq9xogw0ba"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bPhRVjPpMiCAqWo0oLsZVy5X9g7tBOQCSS2AwgEcyXs="
+        }
+      ]
+    },
+    {
+      "Route": "register.sq9xogw0ba.html.gz",
+      "AssetFile": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\Debug\\net9.0\\compressed\\wewzxii0pa-sq9xogw0ba.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 12:53:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sq9xogw0ba"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AFRb/Ca4A+kvSwpS5KP42J0DB/a9ZzDyJwOpNbJhIoI="
+        }
+      ]
+    }
+  ]
+}

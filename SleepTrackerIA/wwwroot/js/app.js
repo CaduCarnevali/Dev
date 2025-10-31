@@ -1,29 +1,28 @@
-﻿
+﻿// wwwroot/app.js (v3 - KAGGLE MODEL)
+
 // URLs da API
 const API_BASE_URL = 'https://localhost:7155';
-const API_URL = `${API_BASE_URL}/api/records`;      
-const PREDICT_URL = `${API_BASE_URL}/api/predict`; 
+const API_URL = `${API_BASE_URL}/api/sleep`;
 const RECOMMEND_URL = `${API_BASE_URL}/api/recommendation`;
 const SIMULATE_URL = `${API_BASE_URL}/api/simulate`;
 
-// Elementos do DOM (Registro)
+// --- Elementos do DOM ---
+// Navegação
+const registerLink = document.getElementById('register-link');
+const dashboardLink = document.getElementById('dashboard-link');
+const simulatorLink = document.getElementById('simulator-link');
+const registerSection = document.getElementById('register-sleep-section');
+const dashboardSection = document.getElementById('dashboard-section');
+const simulatorSection = document.getElementById('simulator-section');
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
+
+// Formulário de Registro (Histórico)
 const form = document.getElementById('sleep-form');
 const tableBody = document.getElementById('history-body');
 const startTimeInput = document.getElementById('start-time');
 const endTimeInput = document.getElementById('end-time');
 const notesInput = document.getElementById('notes');
-
-// Navegação
-const registerLink = document.getElementById('register-link');
-const dashboardLink = document.getElementById('dashboard-link');
-const simulatorLink = document.getElementById('simulator-link'); 
-const registerSection = document.getElementById('register-sleep-section');
-const dashboardSection = document.getElementById('dashboard-section');
-const simulatorSection = document.getElementById('simulator-section'); 
-const menuToggle = document.getElementById('menu-toggle');
-const sidebar = document.getElementById('sidebar');
-
-// Sliders (Registro)
 const prodManhaInput = document.getElementById('prod-manha');
 const prodTardeInput = document.getElementById('prod-tarde');
 const prodNoiteInput = document.getElementById('prod-noite');
@@ -31,16 +30,10 @@ const prodManhaValue = prodManhaInput.nextElementSibling;
 const prodTardeValue = prodTardeInput.nextElementSibling;
 const prodNoiteValue = prodNoiteInput.nextElementSibling;
 
-// Elementos do Simulador (NOVOS)
+// Formulário do Simulador (IA)
 const simulatorForm = document.getElementById('simulator-form');
-const simStartTime = document.getElementById('sim-start-time');
-const simEndTime = document.getElementById('sim-end-time');
-const simDayOfWeek = document.getElementById('sim-day-of-week');
 const simulatorResults = document.getElementById('simulator-results');
-const simResTotal = document.getElementById('sim-res-total');
-const simResMorning = document.getElementById('sim-res-morning');
-const simResAfternoon = document.getElementById('sim-res-afternoon');
-const simResNight = document.getElementById('sim-res-night');
+const simResStress = document.getElementById('sim-res-stress');
 
 // UI Geral
 const notification = document.getElementById('notification');
@@ -48,7 +41,6 @@ let myChart = null;
 
 // --- Funções de UI (Navegação, Sliders) ---
 function showSection(sectionToShow) {
-    // Esconde todas
     registerSection.classList.remove('active-section');
     registerSection.classList.add('hidden-section');
     dashboardSection.classList.remove('active-section');
@@ -56,11 +48,9 @@ function showSection(sectionToShow) {
     simulatorSection.classList.remove('active-section');
     simulatorSection.classList.add('hidden-section');
 
-    // Mostra a escolhida
     sectionToShow.classList.remove('hidden-section');
     sectionToShow.classList.add('active-section');
 
-    // Atualiza links da sidebar
     registerLink.classList.remove('active');
     dashboardLink.classList.remove('active');
     simulatorLink.classList.remove('active');
@@ -82,10 +72,9 @@ dashboardLink.addEventListener('click', (e) => {
     e.preventDefault();
     showSection(dashboardSection);
     loadHistory();
-    loadRecommendation();
     sidebar.classList.remove('open');
 });
-simulatorLink.addEventListener('click', (e) => { 
+simulatorLink.addEventListener('click', (e) => {
     e.preventDefault();
     showSection(simulatorSection);
     sidebar.classList.remove('open');
@@ -103,7 +92,6 @@ updateSliderValue(prodManhaInput, prodManhaValue);
 updateSliderValue(prodTardeInput, prodTardeValue);
 updateSliderValue(prodNoiteInput, prodNoiteValue);
 
-
 // --- Funções de Notificação ---
 function showNotification(message, type = 'success') {
     notification.textContent = message;
@@ -118,8 +106,7 @@ function hideNotification() {
     notification.classList.remove('show');
 }
 
-
-// --- Funções da API (Registro) ---
+// --- Formulário de Registro (Histórico) ---
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -146,13 +133,13 @@ form.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            showNotification('Registro salvo com sucesso!', 'success');
+            showNotification('Registro salvo no histórico!', 'success');
             form.reset();
             prodManhaInput.value = 3; updateSliderValue(prodManhaInput, prodManhaValue);
             prodTardeInput.value = 3; updateSliderValue(prodTardeInput, prodTardeValue);
             prodNoiteInput.value = 3; updateSliderValue(prodNoiteInput, prodNoiteValue);
 
-            await handlePrediction(newRecord);
+            // NÃO CHAMA MAIS A IA DE PREDIÇÃO AQUI
 
             setTimeout(() => {
                 showSection(dashboardSection);
@@ -171,62 +158,7 @@ form.addEventListener('submit', async (e) => {
     }
 });
 
-
-// --- Funções da IA (Predição, Recomendação, Simulação) ---
-async function handlePrediction(record) {
-    try {
-        const response = await fetch(PREDICT_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(record),
-        });
-        if (response.ok) {
-            const predictionData = await response.json();
-            updatePredictionUI(predictionData);
-        } else {
-            console.error('Erro ao buscar predição da IA.');
-        }
-    } catch (error) {
-        console.error('Erro na rede (Predição):', error);
-    }
-}
-function updatePredictionUI(prediction) {
-    formatPredictionTag('pred-manha', prediction.productivityMorning);
-    formatPredictionTag('pred-tarde', prediction.productivityAfternoon);
-    formatPredictionTag('pred-noite', prediction.productivityNight);
-}
-function formatPredictionTag(elementId, value) {
-    const element = document.getElementById(elementId);
-    if (!element) return;
-    let label = 'Baixa';
-    let cssClass = 'low';
-    if (value >= 4.0) {
-        label = 'Alta';
-        cssClass = 'high';
-    } else if (value >= 2.5) {
-        label = 'Média';
-        cssClass = 'medium';
-    }
-    element.classList.remove('high', 'medium', 'low');
-    element.classList.add(cssClass);
-    element.textContent = `${label} (Previsto: ${value})`;
-}
-async function loadRecommendation() {
-    try {
-        const response = await fetch(RECOMMEND_URL);
-        if (response.ok) {
-            const data = await response.json();
-            document.getElementById('rec-start').textContent = data.sleepAt || '-';
-            document.getElementById('rec-end').textContent = data.wakeAt || '-';
-        } else {
-            console.error('Erro ao buscar recomendação.');
-        }
-    } catch (error) {
-        console.error('Erro na rede (Recomendação):', error);
-    }
-}
-
-// NOVO: Event Listener do Formulário do Simulador
+// --- Formulário do Simulador (IA v3) ---
 simulatorForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     hideNotification();
@@ -234,18 +166,18 @@ simulatorForm.addEventListener('submit', async (e) => {
     const submitButton = simulatorForm.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.textContent;
     submitButton.disabled = true;
-    submitButton.textContent = 'Simulando...';
+    submitButton.textContent = 'Prevendo Estresse...';
 
-    // 1. Converter "HH:MM" para float (ex: "22:30" -> 22.5)
-    const timeToFloat = (timeString) => {
-        const [hours, minutes] = timeString.split(':').map(parseFloat);
-        return hours + (minutes / 60);
-    };
-
+    // Coletar os 8 inputs do formulário
     const payload = {
-        startHour: timeToFloat(simStartTime.value),
-        endHour: timeToFloat(simEndTime.value),
-        dayOfWeek: parseInt(simDayOfWeek.value) // 0=Seg, 1=Ter, ...
+        SleepDuration: parseFloat(document.getElementById('sim-duration').value),
+        QualityOfSleep: parseFloat(document.getElementById('sim-quality').value),
+        PhysicalActivityLevel: parseFloat(document.getElementById('sim-activity').value),
+        HeartRate: parseFloat(document.getElementById('sim-heartrate').value),
+        DailySteps: parseFloat(document.getElementById('sim-steps').value),
+        Gender_Num: parseFloat(document.getElementById('sim-gender').value),
+        Age: parseFloat(document.getElementById('sim-age').value),
+        Disorder_Num: parseFloat(document.getElementById('sim-disorder').value)
     };
 
     try {
@@ -256,37 +188,48 @@ simulatorForm.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            const results = await response.json();
-            // ex: { productivityMorning: 4.5, totalScore: 8.5, ... }
-            simResTotal.textContent = results.totalScore;
-            simResMorning.textContent = results.productivityMorning;
-            simResAfternoon.textContent = results.productivityAfternoon;
-            simResNight.textContent = results.productivityNight;
-
-            simulatorResults.style.display = 'block'; // Mostra o card de resultado
+            const results = await response.json(); // ex: { stressLevel: 3.5 }
+            simResStress.textContent = results.stressLevel;
+            simulatorResults.style.display = 'block';
         } else {
             const errorText = await response.text();
             showNotification(`Erro na simulação: ${errorText}`, 'error');
-            simulatorResults.style.display = 'none'; // Esconde resultados
+            simulatorResults.style.display = 'none';
         }
     } catch (error) {
         console.error('Erro na rede (Simulador):', error);
         showNotification('Erro de conexão com o servidor.', 'error');
-        simulatorResults.style.display = 'none'; // Esconde resultados
+        simulatorResults.style.display = 'none';
     } finally {
         submitButton.disabled = false;
         submitButton.textContent = originalButtonText;
     }
 });
 
+// --- Recomendação (IA v3) ---
+async function loadRecommendation() {
+    try {
+        const response = await fetch(RECOMMEND_URL);
+        if (response.ok) {
+            const data = await response.json();
+            // ex: { sleepDuration: 8.5, qualityOfSleep: 9, ... }
+            document.getElementById('rec-duration').textContent = `${data.sleepDuration}h`;
+            document.getElementById('rec-quality').textContent = `${data.qualityOfSleep} / 10`;
+            document.getElementById('rec-activity').textContent = `${data.physicalActivityLevel} min`;
+            document.getElementById('rec-stress').textContent = data.predictedStress;
+        } else {
+            console.error('Erro ao buscar recomendação.');
+        }
+    } catch (error) {
+        console.error('Erro na rede (Recomendação):', error);
+    }
+}
 
-// --- Função de Carregar Histórico (com Gráfico) ---
+// --- Carregar Histórico (Gráfico) ---
 async function loadHistory() {
     try {
         const response = await fetch(API_URL);
-        const data = await response.json();
-        const records = data.items;
-
+        const records = await response.json();
         tableBody.innerHTML = '';
 
         if (records.length === 0) {
@@ -356,8 +299,7 @@ async function loadHistory() {
     }
 }
 
-
-// --- Função de Deletar Registro ---
+// --- Deletar Registro ---
 async function deleteRecord(id) {
     hideNotification();
     if (!confirm('Tem certeza que deseja excluir este registro?')) {
@@ -381,19 +323,15 @@ async function deleteRecord(id) {
 
 // --- Inicialização da página ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Definir a data/hora atual para os inputs datetime-local
+    // Definir a data/hora atual para o formulário de registro
     const now = new Date();
     now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
     const nowString = now.toISOString().slice(0, 16);
     endTimeInput.value = nowString;
 
-    // Define o dia da semana atual no simulador
-    const csharpDay = new Date().getDay(); // Dom=0, Seg=1, ...
-    const pythonDay = (csharpDay + 6) % 7; // Seg=0, Ter=1, ...
-    document.getElementById('sim-day-of-week').value = pythonDay;
+    // A PÁGINA INICIAL AGORA É O SIMULADOR
+    showSection(simulatorSection);
 
-    showSection(dashboardSection);
-    showSection(registerSection);
+    // Carrega a recomendação da IA (v3)
     loadRecommendation();
 });
-

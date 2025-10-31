@@ -3772,23 +3772,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\MarianaNocelli\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\SleepTrackerIA.csproj",
+      "projectUniqueName": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
       "projectName": "SleepTrackerIA",
-      "projectPath": "C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\SleepTrackerIA.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\Delage\\Dev-main\\SleepTrackerIA\\obj\\",
+      "projectPath": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
+      "packagesPath": "C:\\Users\\MarianaNocelli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MarianaNocelli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3797,6 +3797,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\MarianaNocelli\\Documents\\Desenv\\Nuget\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3815,7 +3816,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -3863,7 +3864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

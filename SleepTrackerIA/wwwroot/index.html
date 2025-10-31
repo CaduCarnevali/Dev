@@ -3,21 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SleepTracker IA</title>
+    <title>SleepTracker IA (v3)</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Chart.js para o gráfico -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-    <!-- Div para Notificações Customizadas -->
     <div id="notification"></div>
-
     <div class="container">
         <header class="header">
             <button id="menu-toggle" class="menu-icon"><i class="material-icons">menu</i></button>
-            <span class="app-title">SleepTracker IA</span>
+            <span class="app-title">SleepTracker IA (v3 - Kaggle)</span>
             <div class="header-right">
                 <i class="material-icons">account_circle</i>
                 <i class="material-icons">settings</i>
@@ -25,31 +21,116 @@
         </header>
 
         <aside class="sidebar" id="sidebar">
-            <a href="#" class="sidebar-item active" id="register-link"><i class="material-icons">bedtime</i> Registrar Sono</a>
-            <a href="#" class="sidebar-item" id="dashboard-link"><i class="material-icons">dashboard</i> Meu Dashboard</a>
-
-            <!-- NOVO LINK DO SIMULADOR -->
-            <a href="#" class="sidebar-item" id="simulator-link"><i class="material-icons">science</i> Simulador IA</a>
+            <a href="#" class="sidebar-item active" id="simulator-link"><i class="material-icons">science</i> Simulador de Estresse (IA)</a>
+            <a href="#" class="sidebar-item" id="register-link"><i class="material-icons">bedtime</i> Registrar Sono (Histórico)</a>
+            <a href="#" class="sidebar-item" id="dashboard-link"><i class="material-icons">dashboard</i> Meu Histórico (Gráfico)</a>
         </aside>
 
         <main class="content">
 
-            <!-- Seção 1: Registro de Sono -->
-            <section id="register-sleep-section" class="card active-section">
-                <h2>Insira seus dados para alimentar nossa IA.</h2>
+            <!-- Seção 1: Simulador de Estresse (IA) - AGORA É A PRINCIPAL -->
+            <section id="simulator-section" class="card active-section">
+                <h2>Simulador de Estresse (IA)</h2>
+                <p class="subtitle" style="margin-bottom: 20px;">
+                    Use o modelo treinado com dados reais do Kaggle para prever seu nível de estresse.
+                </p>
+
+                <form id="simulator-form" class="simulator-grid">
+                    <!-- Coluna 1: Sono e Atividade -->
+                    <div class="form-group-column">
+                        <div class="form-group">
+                            <label for="sim-duration">Duração do Sono (Horas)</label>
+                            <input type="number" step="0.5" id="sim-duration" value="7.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-quality">Qualidade do Sono (1-10)</label>
+                            <input type="number" id="sim-quality" value="8" min="1" max="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-activity">Atividade Física (Minutos)</label>
+                            <input type="number" id="sim-activity" value="30" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-steps">Passos Diários</label>
+                            <input type="number" id="sim-steps" value="8000" min="0" required>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Dados Biométricos -->
+                    <div class="form-group-column">
+                        <div class="form-group">
+                            <label for="sim-age">Idade</label>
+                            <input type="number" id="sim-age" value="35" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-gender">Gênero</label>
+                            <select id="sim-gender" required>
+                                <option value="1">Masculino</option>
+                                <option value="0">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-heartrate">Freq. Cardíaca (Repouso)</label>
+                            <input type="number" id="sim-heartrate" value="70" min="40" max="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-disorder">Distúrbio do Sono</label>
+                            <select id="sim-disorder" required>
+                                <option value="0">Nenhum</option>
+                                <option value="1">Insônia</option>
+                                <option value="2">Apneia do Sono</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-button simulator-button">
+                        PREVER NÍVEL DE ESTRESSE
+                    </button>
+                </form>
+
+                <!-- Área de Resultados -->
+                <div id="simulator-results" style="display: none;">
+                    <h3>Nível de Estresse Previsto (1-10)</h3>
+                    <div class="sim-result-box total-score">
+                        <span>Seu estresse previsto é:</span>
+                        <strong id="sim-res-stress">3.5</strong>
+                    </div>
+                </div>
+
+                <!-- Card de Recomendação (v3) -->
+                <div class="card sub-card recommendation-box">
+                    <h3><i class="material-icons">star</i> Recomendação da IA (v3)</h3>
+                    <p class="subtitle">Para o menor nível de estresse possível (em um homem de 35 anos, 70bpm):</p>
+                    <div class="recommendation-item">
+                        <span>Durma por:</span> <span class="value-box" id="rec-duration">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Qualidade do Sono:</span> <span class="value-box" id="rec-quality">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Atividade Física:</span> <span class="value-box" id="rec-activity">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Estresse Mínimo:</span> <span class="value-box" id="rec-stress">--</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 2: Registro de Sono (Agora é secundário) -->
+            <section id="register-sleep-section" class="card hidden-section">
+                <h2>Registrar Sono (Para seu Histórico Pessoal)</h2>
+                <p class="subtitle">Estes dados são para o seu histórico e gráfico pessoal, e não são usados pelo modelo de IA do Kaggle.</p>
                 <form id="sleep-form">
                     <div class="form-group">
                         <label for="start-time">Que horas você dormiu?</label>
                         <input type="datetime-local" id="start-time" required />
-                        <i class="material-icons info-icon" title="Horário que você foi para a cama com intenção de dormir.">info</i>
                     </div>
                     <div class="form-group">
                         <label for="end-time">Que horas você acordou?</label>
                         <input type="datetime-local" id="end-time" required />
-                        <i class="material-icons info-icon" title="Horário que você saiu da cama.">info</i>
                     </div>
                     <div class="slider-group">
-                        <label>Produtividade Percebida (1 a 5)</label>
+                        <label>Produtividade Percebida (1 a 5) (do dia anterior)</label>
                         <div class="slider-item">
                             <label for="prod-manha">Manhã:</label>
                             <input type="range" id="prod-manha" min="1" max="5" value="3">
@@ -70,43 +151,17 @@
                         <label for="notes">Notas:</label>
                         <input type="text" id="notes" placeholder="Alguma observação sobre seu sono ou dia?" />
                     </div>
-                    <button type="submit" class="primary-button">SALVAR REGISTRO</button>
+                    <button type="submit" class="primary-button">SALVAR NO HISTÓRICO</button>
                 </form>
             </section>
 
-            <!-- Seção 2: Dashboard -->
+            <!-- Seção 3: Dashboard (Histórico) -->
             <section id="dashboard-section" class="card hidden-section">
-                <!-- ... (seu dashboard existente com os cards e tabela) ... -->
-                <h2>Meu Dashboard</h2>
-                <div class="dashboard-grid">
-                    <div class="card sub-card">
-                        <h3>Previsão para Hoje</h3>
-                        <p class="subtitle">Baseado no seu último registro</p>
-                        <div class="prediction-item">
-                            <span>Manhã:</span> <span class="tag" id="pred-manha">--</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span>Tarde:</span> <span class="tag" id="pred-tarde">--</span>
-                        </div>
-                        <div class="prediction-item">
-                            <span>Noite:</span> <span class="tag" id="pred-noite">--</span>
-                        </div>
-                    </div>
-                    <div class="card sub-card">
-                        <h3>Recomendação da IA</h3>
-                        <p class="subtitle">Para máxima produtividade</p>
-                        <div class="recommendation-item">
-                            <span>Tente dormir às:</span> <span class="value-box" id="rec-start">--:--</span>
-                        </div>
-                        <div class="recommendation-item">
-                            <span>Tente acordar às:</span> <span class="value-box" id="rec-end">--:--</span>
-                        </div>
-                    </div>
-                </div>
+                <h2>Meu Histórico Pessoal</h2>
+                <p class="subtitle">Este gráfico é preenchido pela seção "Registrar Sono".</p>
                 <h3>Histórico de Registros</h3>
                 <div class="table-container">
                     <table class="data-table" id="history-table">
-                        <!-- ... (thead da tabela) ... -->
                         <thead>
                             <tr>
                                 <th>Data</th>
@@ -120,76 +175,17 @@
                                 <th>Ação</th>
                             </tr>
                         </thead>
-                        <tbody id="history-body">
-                            <!-- Preenchido pelo app.js -->
-                        </tbody>
+                        <tbody id="history-body"></tbody>
                     </table>
                 </div>
-
-                <!-- Gráfico -->
-                <h3>Evolução da Produtividade</h3>
+                <h3>Evolução da Produtividade (Histórico Pessoal)</h3>
                 <div class="card sub-card">
                     <canvas id="productivityChart"></canvas>
                 </div>
             </section>
 
-            <!-- NOVA SEÇÃO DO SIMULADOR -->
-            <section id="simulator-section" class="card hidden-section">
-                <h2>Simulador de Produtividade</h2>
-                <p class="subtitle" style="margin-bottom: 20px;">Use a IA para testar cenários "E se...?" e planejar sua noite.</p>
-
-                <form id="simulator-form">
-                    <div class="form-group">
-                        <label for="sim-start-time">Se eu dormir às...</label>
-                        <input type="time" id="sim-start-time" required value="23:00">
-                    </div>
-                    <div class="form-group">
-                        <label for="sim-end-time">E acordar às...</label>
-                        <input type="time" id="sim-end-time" required value="07:00">
-                    </div>
-                    <div class="form-group">
-                        <label for="sim-day-of-week">Em qual dia...</label>
-                        <select id="sim-day-of-week" required>
-                            <option value="0">Segunda-feira</option>
-                            <option value="1">Terça-feira</option>
-                            <option value="2">Quarta-feira</option>
-                            <option value="3">Quinta-feira</option>
-                            <option value="4">Sexta-feira</option>
-                            <option value="5">Sábado</option>
-                            <option value="6">Domingo</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="primary-button">SIMULAR PRODUTIVIDADE</button>
-                </form>
-
-                <!-- Área de Resultados (aparece após simular) -->
-                <div id="simulator-results" style="display: none;">
-                    <h3>Resultado da Simulação</h3>
-                    <div class="dashboard-grid">
-                        <div class="card sub-card sim-result-box">
-                            <span>Score Total (Manhã+Tarde)</span>
-                            <strong id="sim-res-total">8.5</strong>
-                        </div>
-                        <div class="card sub-card sim-result-box">
-                            <span>Prod. Manhã</span>
-                            <strong id="sim-res-morning">4.5</strong>
-                        </div>
-                        <div class="card sub-card sim-result-box">
-                            <span>Prod. Tarde</span>
-                            <strong id="sim-res-afternoon">4.0</strong>
-                        </div>
-                        <div class="card sub-card sim-result-box">
-                            <span>Prod. Noite</span>
-                            <strong id="sim-res-night">3.0</strong>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </main>
     </div>
-
     <script src="js/app.js"></script>
 </body>
 </html>

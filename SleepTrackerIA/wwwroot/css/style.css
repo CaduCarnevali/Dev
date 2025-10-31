@@ -498,3 +498,94 @@ form .form-group {
         font-size: 3em;
     }
 
+
+/* NOVOS ESTILOS PARA O SIMULADOR v3 */
+
+.simulator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 30px;
+    align-items: start;
+}
+
+/* O botão agora ocupa as duas colunas */
+.simulator-button {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.form-group-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os itens do formulário */
+}
+
+/* Inputs do simulador (input e select) */
+#simulator-form input,
+#simulator-form select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#simulator-form .form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Resultado da Simulação */
+#simulator-results h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.sim-result-box.total-score {
+    padding: 30px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+    .sim-result-box.total-score span {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.1em;
+    }
+
+    .sim-result-box.total-score strong {
+        color: #fff;
+        font-size: 4em;
+        line-height: 1;
+        display: block;
+    }
+
+/* Card de Recomendação v3 */
+.recommendation-box {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+}
+
+    .recommendation-box h3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recommendation-box .recommendation-item {
+        font-size: 1.1em;
+    }
+
+/* Ajuste para telas menores */
+@media (max-width: 900px) {
+    .simulator-grid {
+        grid-template-columns: 1fr; /* Coluna única */
+    }
+}

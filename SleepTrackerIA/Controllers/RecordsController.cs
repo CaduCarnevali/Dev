@@ -38,23 +38,23 @@ public class RecordsController : ControllerBase
         int productivityNight 
     );
 
-    [HttpPost]
-    public async Task<IActionResult> Post([FromBody] CreateRecordDto dto)
-    {
-        var record = new SleepRecord
-        {
-            StartTime = dto.startTime, 
-            EndTime = dto.endTime,    
-            Notes = dto.notes,        
-            ProductivityMorning = dto.productivityMorning, 
-            ProductivityAfternoon = dto.productivityAfternoon, 
-            ProductivityNight = dto.productivityNight 
-        };
+    //[HttpPost]
+    //public async Task<IActionResult> Post([FromBody] CreateRecordDto dto)
+    //{
+    //    var record = new SleepRecord
+    //    {
+    //        StartTime = dto.startTime, 
+    //        EndTime = dto.endTime,    
+    //        Notes = dto.notes,        
+    //        ProductivityMorning = dto.productivityMorning, 
+    //        ProductivityAfternoon = dto.productivityAfternoon, 
+    //        ProductivityNight = dto.productivityNight 
+    //    };
 
-        _db.SleepRecords.Add(record);
-        await _db.SaveChangesAsync();
-        return Created($"/api/records/{record.Id}", record);
-    }
+    //    _db.SleepRecords.Add(record);
+    //    await _db.SaveChangesAsync();
+    //    return Created($"/api/records/{record.Id}", record);
+    //}
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
