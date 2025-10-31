@@ -1,99 +1,196 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SleepTracker IA - Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand app-navbar px-3">
-      <a class="navbar-brand" href="#">SleepTracker IA</a>
-      <div class="ms-auto navbar-text"><i class="bi bi-gear"></i></div>
-    </nav>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepTracker IA</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Chart.js para o gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
 
-    <!-- Sidebar -->
-    <div class="sidebar p-3">
-      <div class="mb-3 fw-semibold">Menu</div>
-      <ul class="nav flex-column">
-        <li class="nav-item"><a id="nav-register" class="nav-link" href="/register.html">Registrar Sono</a></li>
-        <li class="nav-item"><a id="nav-dashboard" class="nav-link" href="/">Meu Dashboard</a></li>
-      </ul>
+    <!-- Div para Notificações Customizadas -->
+    <div id="notification"></div>
+
+    <div class="container">
+        <header class="header">
+            <button id="menu-toggle" class="menu-icon"><i class="material-icons">menu</i></button>
+            <span class="app-title">SleepTracker IA</span>
+            <div class="header-right">
+                <i class="material-icons">account_circle</i>
+                <i class="material-icons">settings</i>
+            </div>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <a href="#" class="sidebar-item active" id="register-link"><i class="material-icons">bedtime</i> Registrar Sono</a>
+            <a href="#" class="sidebar-item" id="dashboard-link"><i class="material-icons">dashboard</i> Meu Dashboard</a>
+
+            <!-- NOVO LINK DO SIMULADOR -->
+            <a href="#" class="sidebar-item" id="simulator-link"><i class="material-icons">science</i> Simulador IA</a>
+        </aside>
+
+        <main class="content">
+
+            <!-- Seção 1: Registro de Sono -->
+            <section id="register-sleep-section" class="card active-section">
+                <h2>Insira seus dados para alimentar nossa IA.</h2>
+                <form id="sleep-form">
+                    <div class="form-group">
+                        <label for="start-time">Que horas você dormiu?</label>
+                        <input type="datetime-local" id="start-time" required />
+                        <i class="material-icons info-icon" title="Horário que você foi para a cama com intenção de dormir.">info</i>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-time">Que horas você acordou?</label>
+                        <input type="datetime-local" id="end-time" required />
+                        <i class="material-icons info-icon" title="Horário que você saiu da cama.">info</i>
+                    </div>
+                    <div class="slider-group">
+                        <label>Produtividade Percebida (1 a 5)</label>
+                        <div class="slider-item">
+                            <label for="prod-manha">Manhã:</label>
+                            <input type="range" id="prod-manha" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                        <div class="slider-item">
+                            <label for="prod-tarde">Tarde:</label>
+                            <input type="range" id="prod-tarde" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                        <div class="slider-item">
+                            <label for="prod-noite">Noite:</label>
+                            <input type="range" id="prod-noite" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notas:</label>
+                        <input type="text" id="notes" placeholder="Alguma observação sobre seu sono ou dia?" />
+                    </div>
+                    <button type="submit" class="primary-button">SALVAR REGISTRO</button>
+                </form>
+            </section>
+
+            <!-- Seção 2: Dashboard -->
+            <section id="dashboard-section" class="card hidden-section">
+                <!-- ... (seu dashboard existente com os cards e tabela) ... -->
+                <h2>Meu Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="card sub-card">
+                        <h3>Previsão para Hoje</h3>
+                        <p class="subtitle">Baseado no seu último registro</p>
+                        <div class="prediction-item">
+                            <span>Manhã:</span> <span class="tag" id="pred-manha">--</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span>Tarde:</span> <span class="tag" id="pred-tarde">--</span>
+                        </div>
+                        <div class="prediction-item">
+                            <span>Noite:</span> <span class="tag" id="pred-noite">--</span>
+                        </div>
+                    </div>
+                    <div class="card sub-card">
+                        <h3>Recomendação da IA</h3>
+                        <p class="subtitle">Para máxima produtividade</p>
+                        <div class="recommendation-item">
+                            <span>Tente dormir às:</span> <span class="value-box" id="rec-start">--:--</span>
+                        </div>
+                        <div class="recommendation-item">
+                            <span>Tente acordar às:</span> <span class="value-box" id="rec-end">--:--</span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Histórico de Registros</h3>
+                <div class="table-container">
+                    <table class="data-table" id="history-table">
+                        <!-- ... (thead da tabela) ... -->
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Dormiu</th>
+                                <th>Acordou</th>
+                                <th>Duração</th>
+                                <th>Prod. Manhã</th>
+                                <th>Prod. Tarde</th>
+                                <th>Prod. Noite</th>
+                                <th>Notas</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-body">
+                            <!-- Preenchido pelo app.js -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gráfico -->
+                <h3>Evolução da Produtividade</h3>
+                <div class="card sub-card">
+                    <canvas id="productivityChart"></canvas>
+                </div>
+            </section>
+
+            <!-- NOVA SEÇÃO DO SIMULADOR -->
+            <section id="simulator-section" class="card hidden-section">
+                <h2>Simulador de Produtividade</h2>
+                <p class="subtitle" style="margin-bottom: 20px;">Use a IA para testar cenários "E se...?" e planejar sua noite.</p>
+
+                <form id="simulator-form">
+                    <div class="form-group">
+                        <label for="sim-start-time">Se eu dormir às...</label>
+                        <input type="time" id="sim-start-time" required value="23:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="sim-end-time">E acordar às...</label>
+                        <input type="time" id="sim-end-time" required value="07:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="sim-day-of-week">Em qual dia...</label>
+                        <select id="sim-day-of-week" required>
+                            <option value="0">Segunda-feira</option>
+                            <option value="1">Terça-feira</option>
+                            <option value="2">Quarta-feira</option>
+                            <option value="3">Quinta-feira</option>
+                            <option value="4">Sexta-feira</option>
+                            <option value="5">Sábado</option>
+                            <option value="6">Domingo</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="primary-button">SIMULAR PRODUTIVIDADE</button>
+                </form>
+
+                <!-- Área de Resultados (aparece após simular) -->
+                <div id="simulator-results" style="display: none;">
+                    <h3>Resultado da Simulação</h3>
+                    <div class="dashboard-grid">
+                        <div class="card sub-card sim-result-box">
+                            <span>Score Total (Manhã+Tarde)</span>
+                            <strong id="sim-res-total">8.5</strong>
+                        </div>
+                        <div class="card sub-card sim-result-box">
+                            <span>Prod. Manhã</span>
+                            <strong id="sim-res-morning">4.5</strong>
+                        </div>
+                        <div class="card sub-card sim-result-box">
+                            <span>Prod. Tarde</span>
+                            <strong id="sim-res-afternoon">4.0</strong>
+                        </div>
+                        <div class="card sub-card sim-result-box">
+                            <span>Prod. Noite</span>
+                            <strong id="sim-res-night">3.0</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-      <div class="row g-3">
-        <div class="col-lg-8">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Previsão para Hoje <small class="ms-2">Baseado no seu último registro</small></h5>
-              <div class="mt-3">
-                <div class="mb-2">Manhã:</div>
-                <span id="chip-morning" class="chip"></span>
-              </div>
-              <div class="mt-3">
-                <div class="mb-2">Tarde:</div>
-                <span id="chip-afternoon" class="chip"></span>
-              </div>
-              <div class="mt-3">
-                <div class="mb-2">Noite:</div>
-                <span id="chip-night" class="chip"></span>
-              </div>
-              <div class="mt-2 section-note">(Atualizado automaticamente pela API quando disponível)</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">🔥 Recomendação da IA <small>Para máxima produtividade</small></h5>
-              <div class="mt-3">Tente dormir às:</div>
-              <span class="chip chip-low" id="rec-sleep">--:--</span>
-              <div class="mt-3">Tente acordar às:</div>
-              <span class="chip chip-low" id="rec-wake">--:--</span>
-              <div class="mt-2 section-note">(Essas sugestões serão substituídas pelas da sua API Python)</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
 
-      <div class="card mt-4 table-wrap">
-        <div class="card-body">
-          <h5 class="card-title">Histórico de Registros</h5>
-          <div class="d-flex justify-content-end align-items-center mb-2">
-            <label class="me-2">Rows per page:</label>
-            <select id="rowsPerPage" class="form-select form-select-sm" style="width:120px" onchange="loadTable(1)">
-              <option value="10" selected>10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-            </select>
-          </div>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Data</th>
-                  <th>Dormiu</th>
-                  <th>Acordou</th>
-                  <th>Manhã</th>
-                  <th>Tarde</th>
-                  <th>Noite</th>
-                </tr>
-              </thead>
-              <tbody id="historyBody"></tbody>
-            </table>
-          </div>
-          <div class="footer">Total registros: <span id="totalCount">0</span></div>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script>loadDashboard();</script>
-  </body>
-  </html>
