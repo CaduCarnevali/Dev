@@ -18,7 +18,7 @@ public class DashboardController : ControllerBase
     [HttpGet("summary")]
     public async Task<IActionResult> Summary()
     {
-        var last = await _db.SleepRecords.OrderByDescending(r => r.Date).FirstOrDefaultAsync();
+        var last = await _db.SleepRecords.OrderByDescending(r => r.StartTime).FirstOrDefaultAsync();
         if (last == null)
         {
             return Ok(new

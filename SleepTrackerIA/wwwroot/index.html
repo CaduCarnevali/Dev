@@ -1,99 +1,192 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SleepTracker IA - Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand app-navbar px-3">
-      <a class="navbar-brand" href="#">SleepTracker IA</a>
-      <div class="ms-auto navbar-text"><i class="bi bi-gear"></i></div>
-    </nav>
-
-    <!-- Sidebar -->
-    <div class="sidebar p-3">
-      <div class="mb-3 fw-semibold">Menu</div>
-      <ul class="nav flex-column">
-        <li class="nav-item"><a id="nav-register" class="nav-link" href="/register.html">Registrar Sono</a></li>
-        <li class="nav-item"><a id="nav-dashboard" class="nav-link" href="/">Meu Dashboard</a></li>
-      </ul>
-    </div>
-
-    <!-- Content -->
-    <div class="content">
-      <div class="row g-3">
-        <div class="col-lg-8">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Previsão para Hoje <small class="ms-2">Baseado no seu último registro</small></h5>
-              <div class="mt-3">
-                <div class="mb-2">Manhã:</div>
-                <span id="chip-morning" class="chip"></span>
-              </div>
-              <div class="mt-3">
-                <div class="mb-2">Tarde:</div>
-                <span id="chip-afternoon" class="chip"></span>
-              </div>
-              <div class="mt-3">
-                <div class="mb-2">Noite:</div>
-                <span id="chip-night" class="chip"></span>
-              </div>
-              <div class="mt-2 section-note">(Atualizado automaticamente pela API quando disponível)</div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepTracker IA (v3)</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="notification"></div>
+    <div class="container">
+        <header class="header">
+            <button id="menu-toggle" class="menu-icon"><i class="material-icons">menu</i></button>
+            <span class="app-title">SleepTracker IA (v3 - Kaggle)</span>
+            <div class="header-right">
+                <i class="material-icons">account_circle</i>
+                <i class="material-icons">settings</i>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">🔥 Recomendação da IA <small>Para máxima produtividade</small></h5>
-              <div class="mt-3">Tente dormir às:</div>
-              <span class="chip chip-low" id="rec-sleep">--:--</span>
-              <div class="mt-3">Tente acordar às:</div>
-              <span class="chip chip-low" id="rec-wake">--:--</span>
-              <div class="mt-2 section-note">(Essas sugestões serão substituídas pelas da sua API Python)</div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </header>
 
-      <div class="card mt-4 table-wrap">
-        <div class="card-body">
-          <h5 class="card-title">Histórico de Registros</h5>
-          <div class="d-flex justify-content-end align-items-center mb-2">
-            <label class="me-2">Rows per page:</label>
-            <select id="rowsPerPage" class="form-select form-select-sm" style="width:120px" onchange="loadTable(1)">
-              <option value="10" selected>10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-            </select>
-          </div>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Data</th>
-                  <th>Dormiu</th>
-                  <th>Acordou</th>
-                  <th>Manhã</th>
-                  <th>Tarde</th>
-                  <th>Noite</th>
-                </tr>
-              </thead>
-              <tbody id="historyBody"></tbody>
-            </table>
-          </div>
-          <div class="footer">Total registros: <span id="totalCount">0</span></div>
-        </div>
-      </div>
+        <aside class="sidebar" id="sidebar">
+            <a href="#" class="sidebar-item active" id="simulator-link"><i class="material-icons">science</i> Simulador de Estresse (IA)</a>
+            <a href="#" class="sidebar-item" id="register-link"><i class="material-icons">bedtime</i> Registrar Sono (Histórico)</a>
+            <a href="#" class="sidebar-item" id="dashboard-link"><i class="material-icons">dashboard</i> Meu Histórico (Gráfico)</a>
+        </aside>
+
+        <main class="content">
+
+            <!-- Seção 1: Simulador de Estresse (IA) - AGORA É A PRINCIPAL -->
+            <section id="simulator-section" class="card active-section">
+                <h2>Simulador de Estresse (IA)</h2>
+                <p class="subtitle" style="margin-bottom: 20px;">
+                    Use o modelo treinado com dados reais do Kaggle para prever seu nível de estresse.
+                </p>
+
+                <form id="simulator-form" class="simulator-grid">
+                    <!-- Coluna 1: Sono e Atividade -->
+                    <div class="form-group-column">
+                        <div class="form-group">
+                            <label for="sim-duration">Duração do Sono (Horas)</label>
+                            <input type="number" step="0.5" id="sim-duration" value="7.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-quality">Qualidade do Sono (1-10)</label>
+                            <input type="number" id="sim-quality" value="8" min="1" max="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-activity">Atividade Física (Minutos)</label>
+                            <input type="number" id="sim-activity" value="30" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-steps">Passos Diários</label>
+                            <input type="number" id="sim-steps" value="8000" min="0" required>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Dados Biométricos -->
+                    <div class="form-group-column">
+                        <div class="form-group">
+                            <label for="sim-age">Idade</label>
+                            <input type="number" id="sim-age" value="35" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-gender">Gênero</label>
+                            <select id="sim-gender" required>
+                                <option value="1">Masculino</option>
+                                <option value="0">Feminino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-heartrate">Freq. Cardíaca (Repouso)</label>
+                            <input type="number" id="sim-heartrate" value="70" min="40" max="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sim-disorder">Distúrbio do Sono</label>
+                            <select id="sim-disorder" required>
+                                <option value="0">Nenhum</option>
+                                <option value="1">Insônia</option>
+                                <option value="2">Apneia do Sono</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-button simulator-button">
+                        PREVER NÍVEL DE ESTRESSE
+                    </button>
+                </form>
+
+                <!-- Área de Resultados -->
+                <div id="simulator-results" style="display: none;">
+                    <h3>Nível de Estresse Previsto (1-10)</h3>
+                    <div class="sim-result-box total-score">
+                        <span>Seu estresse previsto é:</span>
+                        <strong id="sim-res-stress">3.5</strong>
+                    </div>
+                </div>
+
+                <!-- Card de Recomendação (v3) -->
+                <div class="card sub-card recommendation-box">
+                    <h3><i class="material-icons">star</i> Recomendação da IA (v3)</h3>
+                    <p class="subtitle">Para o menor nível de estresse possível (em um homem de 35 anos, 70bpm):</p>
+                    <div class="recommendation-item">
+                        <span>Durma por:</span> <span class="value-box" id="rec-duration">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Qualidade do Sono:</span> <span class="value-box" id="rec-quality">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Atividade Física:</span> <span class="value-box" id="rec-activity">--</span>
+                    </div>
+                    <div class="recommendation-item">
+                        <span>Estresse Mínimo:</span> <span class="value-box" id="rec-stress">--</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 2: Registro de Sono (Agora é secundário) -->
+            <section id="register-sleep-section" class="card hidden-section">
+                <h2>Registrar Sono (Para seu Histórico Pessoal)</h2>
+                <p class="subtitle">Estes dados são para o seu histórico e gráfico pessoal, e não são usados pelo modelo de IA do Kaggle.</p>
+                <form id="sleep-form">
+                    <div class="form-group">
+                        <label for="start-time">Que horas você dormiu?</label>
+                        <input type="datetime-local" id="start-time" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="end-time">Que horas você acordou?</label>
+                        <input type="datetime-local" id="end-time" required />
+                    </div>
+                    <div class="slider-group">
+                        <label>Produtividade Percebida (1 a 5) (do dia anterior)</label>
+                        <div class="slider-item">
+                            <label for="prod-manha">Manhã:</label>
+                            <input type="range" id="prod-manha" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                        <div class="slider-item">
+                            <label for="prod-tarde">Tarde:</label>
+                            <input type="range" id="prod-tarde" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                        <div class="slider-item">
+                            <label for="prod-noite">Noite:</label>
+                            <input type="range" id="prod-noite" min="1" max="5" value="3">
+                            <span class="slider-value">3</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notas:</label>
+                        <input type="text" id="notes" placeholder="Alguma observação sobre seu sono ou dia?" />
+                    </div>
+                    <button type="submit" class="primary-button">SALVAR NO HISTÓRICO</button>
+                </form>
+            </section>
+
+            <!-- Seção 3: Dashboard (Histórico) -->
+            <section id="dashboard-section" class="card hidden-section">
+                <h2>Meu Histórico Pessoal</h2>
+                <p class="subtitle">Este gráfico é preenchido pela seção "Registrar Sono".</p>
+                <h3>Histórico de Registros</h3>
+                <div class="table-container">
+                    <table class="data-table" id="history-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Dormiu</th>
+                                <th>Acordou</th>
+                                <th>Duração</th>
+                                <th>Prod. Manhã</th>
+                                <th>Prod. Tarde</th>
+                                <th>Prod. Noite</th>
+                                <th>Notas</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-body"></tbody>
+                    </table>
+                </div>
+                <h3>Evolução da Produtividade (Histórico Pessoal)</h3>
+                <div class="card sub-card">
+                    <canvas id="productivityChart"></canvas>
+                </div>
+            </section>
+
+        </main>
     </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script>loadDashboard();</script>
-  </body>
-  </html>

@@ -1,0 +1,84 @@
+## ===========================
+##  .NET / Visual Studio
+## ===========================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.vs/
+
+# Rider / JetBrains
+.idea/
+
+# Backup & Auto-generated files
+*.bak
+*.tmp
+*.temp
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+
+# Publish outputs
+wwwroot/dist/
+wwwroot/node_modules/
+publish/
+out/
+artifacts/
+
+# ASP.NET
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# Optional: ignore SQLite DB if gerado em runtime
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment files
+.env
+.env.*
+
+# Others
+Thumbs.db
+*.DS_Store
+*.orig
+
+# If you use secrets.json (User Secrets)
+secrets.json
+
+# Paket / NuGet
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Coverage / Test
+coverage/
+TestResults/
+*.coverage
+*.coveragexml
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Temporary folders
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

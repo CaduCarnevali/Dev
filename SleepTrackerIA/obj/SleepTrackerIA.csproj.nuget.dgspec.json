@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafael.pereira\\Documents\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj": {}
+    "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafael.pereira\\Documents\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj": {
+    "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.pereira\\Documents\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
+        "projectUniqueName": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
         "projectName": "SleepTrackerIA",
-        "projectPath": "C:\\Users\\rafael.pereira\\Documents\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
-        "packagesPath": "C:\\Users\\rafael.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.pereira\\Documents\\Dev\\SleepTrackerIA\\obj\\",
+        "projectPath": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\SleepTrackerIA.csproj",
+        "packagesPath": "C:\\Users\\MarianaNocelli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MarianaNocelli\\Documents\\Delage\\Dev\\SleepTrackerIA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rafael.pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MarianaNocelli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,10 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/delagesistemas/WMS/_packaging/WMSNuGet/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/delagesistemas/_packaging/delagesistemas/nuget/v3/index.json": {}
+          "C:\\Users\\MarianaNocelli\\Documents\\Desenv\\Nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -48,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -67,6 +64,14 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.10, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.23.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
             }
           },
           "imports": [
@@ -88,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
